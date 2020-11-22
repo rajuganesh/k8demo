@@ -6,7 +6,7 @@
   },
   "spec": {
     "serviceName": "pgset",
-    "replicas": 2,
+    "replicas": 1,
     "selector": {
        "matchLabels": {
 	  "app": "pgset"
@@ -84,7 +84,7 @@
           "accessModes": [
             "ReadWriteOnce"
           ],
-	  "storageClassName": "openebs-jiva-default",
+	  "storageClassName": "openebs-hostpath",
           "resources": {
             "requests": {
               "storage": "400M"
